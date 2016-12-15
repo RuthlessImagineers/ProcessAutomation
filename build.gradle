@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
+    compile group: 'org.redisson', name: 'redisson', version: '2.3.0'
+    compile group: 'org.mockito', name: 'mockito-core', version: '2.1.0-RC.1'
+    compile group: 'org.codehaus.jackson', name: 'jackson-jaxrs', version: '1.8.5'
+    compile group: 'com.jayway.awaitility', name: 'awaitility', version: '1.7.0'
+    compile group: 'org.json', name: 'json', version: '20160810'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
+    compile 'io.reactivex:rxjava:x.y.z'
+    compile group: 'uk.co.real-logic', name: 'Agrona', version: '0.1'
+    compile group: 'nz.ac.waikato.cms.weka', name: 'weka-stable', version: '3.6.6'
+    compile group: 'org.elasticsearch', name: 'elasticsearch', version: '5.0.1'
+
+
+}
